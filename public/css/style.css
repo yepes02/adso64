@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5; /* Color de fondo más neutro */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+header {
+    background: #004d40; /* Verde oscuro para un toque profesional */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamaño de fuente más grande para el título */
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.2em; /* Tamaño de fuente más pequeño para subtítulos */
+}
+
+nav {
+    background: #00695c; /* Verde más oscuro para el menú */
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative; /* Necesario para el submenú */
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em; /* Tamaño de fuente más uniforme */
+}
+
+nav ul li a:hover {
+    background: #004d40; /* Color más oscuro al pasar el mouse */
+}
+
+main {
+    padding: 20px;
+    background: #fff; /* Fondo blanco para el contenido principal */
+    border: 1px solid #ddd; /* Borde sutil alrededor del contenido */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+footer {
+    background: #004d40; /* Mismo verde oscuro para el pie de página */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold; /* Resalta las etiquetas de los formularios */
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1em; /* Tamaño de fuente consistente */
+}
+
+button {
+    background-color: #00796b; /* Verde más oscuro para botones */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #004d40; /* Mismo verde oscuro al pasar el mouse */
+}
+
+.alert {
+    padding: 15px;
+    background-color: #f8d7da;
+    color: #721c24;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Estilos para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #00796b; /* Verde para encabezados de tabla */
+    color: #fff;
+    text-align: center;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #e0f2f1; /* Verde claro para fila en hover */
+}
+
+.table a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos básicos del menú con submenú */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    background: #004d40;
+}
+
+/* Estilo del submenú */
+.submenu {
+    display: none; /* Oculta el submenú por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #00796b; /* Color de fondo del submenú */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    border: 1px solid #004d40; /* Borde para el submenú */
+    border-radius: 4px;
+}
+
+.submenu li a {
+    padding: 10px;
+    color: #fff;
+    display: block;
+}
+
+/* Mostrar el submenú cuando se pasa el mouse sobre el ítem principal */
+.has-submenu:hover .submenu {
+    display: block;
+}
